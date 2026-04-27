@@ -2,18 +2,23 @@
 
   <img src="assets/profil.jpg"
        alt="Profilbilde"
-       style="width:150px; border-radius:50%;" />
+       style="width:150px; border-radius:50%;">
 
   <div>
+    <h2>Hei, jeg heter Trinh My Hoang</h2>
 
-## Hei, jeg heter Trinh My Hoang
+    <p>
+      Jeg er student i informasjonssystemer ved Universitetet i Agder og søker praksisplass høsten 2026.
+      Jeg er interessert i hvordan IT‑systemer brukes i praksis i organisasjoner, og ønsker å utvikle både
+      tekniske og analytiske ferdigheter gjennom praksis.
+    </p>
 
-Jeg er student i informasjonssystemer ved Universitetet i Agder og søker praksisplass høsten 2026.
-Jeg er interessert i hvordan IT‑systemer brukes i praksis i organisasjoner, og ønsker å utvikle både tekniske og analytiske ferdigheter gjennom praksis.
+    <p>
+      Jeg jobber strukturert, liker å lære nye ting og trives godt med samarbeid i gruppe.
+    </p>
+  </div>
 
-Jeg jobber strukturert, liker å lære nye ting og trives godt med samarbeid i gruppe.
-
----
+</div>
 
 ## Kompetanse
 
