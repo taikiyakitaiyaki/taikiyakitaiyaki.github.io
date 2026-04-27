@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="no">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trinh My Hoang – Portfolio</title>
+  <title>My Trinh Hoang – Portfolio</title>
 
   <style>
     body {
@@ -29,6 +28,11 @@
       gap: 48px;
       align-items: center;
       margin-bottom: 80px;
+
+      /* ⭐ Premium-look */
+      background: linear-gradient(135deg, #eef2ff, #ffffff);
+      padding: 40px;
+      border-radius: 24px;
     }
 
     .hero img {
@@ -40,7 +44,7 @@
     }
 
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
       margin: 0 0 12px;
     }
 
@@ -70,6 +74,14 @@
       padding: 32px;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+      /* ⭐ Subtil hover-effekt */
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.08);
     }
 
     .grid-3 {
@@ -83,17 +95,23 @@
       margin: 12px 0 0;
     }
 
-    /* FOOTER / LINKS */
+    /* BUTTON LINKS */
     .links a {
       display: inline-block;
       margin-right: 16px;
+      margin-bottom: 8px;
+      padding: 10px 16px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: 500;
       color: #2563eb;
+      background: #eef2ff;
+      transition: background 0.2s ease, transform 0.2s ease;
     }
 
     .links a:hover {
-      text-decoration: underline;
+      background: #e0e7ff;
+      transform: translateY(-2px);
     }
 
     /* RESPONSIVE */
@@ -214,8 +232,9 @@
       <h2>Kontakt</h2>
 
       <div class="card links">
-        <a href="https://github.com/taikiyakitaiyaki" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/taikiyakitaiyaki" target="_blank">GitHub →</a>
+        <a href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank">LinkedIn →</a>
+
         <p style="margin-top:16px;">
           📧 trinhmh@uia.no
         </p>
