@@ -77,27 +77,15 @@
       box-shadow: 0 14px 40px rgba(0,0,0,0.08);
     }
 
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 32px;
-    }
-
     ul { padding-left: 20px; margin: 12px 0 0; }
 
-    /* Knapper */
+    /* Knapper (samme spacing i hero og kontakt) */
     .links {
       display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-    }
-
-    /* Kontakt: mer luft + midtstilling */
-    #kontakt .links {
       gap: 24px;
-      justify-content: center;
+      flex-wrap: wrap;
       margin-top: 32px;
+      justify-content: center;
     }
 
     .links a {
@@ -124,11 +112,30 @@
 
     .links a.primary:hover { background: #1e40af; }
 
+    /* Interaktive piler på prosjektlenker */
+    .arrow-link {
+      position: relative;
+      padding-right: 16px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .arrow-link::after {
+      content: "›";
+      position: absolute;
+      right: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .arrow-link:hover::after {
+      transform: translateX(4px);
+    }
+
     /* Responsiv */
     @media (max-width: 768px) {
       .hero-inner { grid-template-columns: 1fr; text-align: center; }
       .hero img { margin: 0 auto; }
-      .links { justify-content: center; }
     }
   </style>
 </head>
@@ -164,33 +171,14 @@
   <!-- KOMPETANSE -->
   <section class="container">
     <h2>Kompetanse</h2>
-    <div class="grid-3">
-      <div class="card">
-        <strong>Programmering</strong>
-        <ul>
-          <li>C#</li>
-          <li>Python (grunnleggende)</li>
-          <li>SQL</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Web og systemer</strong>
-        <ul>
-          <li>HTML og CSS</li>
-          <li>Systemanalyse</li>
-          <li>Kravspesifikasjon</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Verktøy</strong>
-        <ul>
-          <li>Git og GitHub</li>
-          <li>Visual Studio Code</li>
-          <li>Dokumentasjon</li>
-        </ul>
-      </div>
+    <div class="card">
+      <ul>
+        <li>C#</li>
+        <li>Python (grunnleggende)</li>
+        <li>SQL</li>
+        <li>HTML og CSS</li>
+        <li>Systemanalyse og kravspesifikasjon</li>
+      </ul>
     </div>
   </section>
 
@@ -199,14 +187,14 @@
     <h2>Prosjekter og erfaring</h2>
     <div class="card">
 
-      <p><strong>Gruppeprosjekt – NRL‑prosjekt (IS-200, IS-201, IS-202, C#)</strong></p>
+      <p><strong>Gruppeprosjekt – NRL‑prosjekt (C#)</strong></p>
       <ul>
-        <li>Gruppebasert prosjekt fra forrige semester</li>
+        <li>Gruppebasert prosjekt fra andre semester</li>
         <li>Arbeid med analyse, struktur og programmering</li>
         <li>Hovedsakelig utvikling i C#</li>
       </ul>
       <p>
-        🔗 <a href="https://github.com/aanonho/NRL-prosjekt-Gr14-2025H" target="_blank">Kode på GitHub</a>
+        https://github.com/aanonho/NRL-prosjekt-Gr14-2025H
       </p>
 
       <p><strong>Individuelt prosjekt – Study Buddies (IS‑211, Python)</strong></p>
@@ -216,8 +204,8 @@
         <li>Deployet som web‑applikasjon</li>
       </ul>
       <p>
-        🔗 <a href="https://github.com/taikiyakitaiyaki/Study_Buddies" target="_blank">Kode på GitHub</a>
-        -> <a href="https://v0-study-buddies-ui.vercel.app/" target="_blank">Live demo</a><br>
+        <a href="https://github.com/taikiyakitaiyaki/Study_Buddies" target="_blank" class="arrow-link">Kode på GitHub</a><br>
+        <a href="https://v0-study-buddies-ui.vercel.app/" target="_blank" class="arrow-link">Live demo</a>
       </p>
 
       <p><strong>Pågående gruppeprosjekt – IS‑218 (Webkart)</strong></p>
@@ -227,7 +215,7 @@
         <li>Backend med Supabase/PostGIS for steddata</li>
       </ul>
       <p>
-        🔗 <a href="https://github.com/snbhansen/IS218" target="_blank">Se pågående prosjekt på GitHub</a>
+        <a href="https://github.com/snbhansen/IS218" target="_blank" class="arrow-link">Pågående prosjekt på GitHub</a>
       </p>
 
     </div>
@@ -250,8 +238,8 @@
     <h2>Kontakt</h2>
     <div class="card links">
       <a href="assets/My_Trinh_Hoang_CV.pdf" download>Last ned CV</a>
-      <a href="https://github.com/taikiyakitaiyaki" target="_blank">GitHub →</a>
-      <a href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank">LinkedIn →</a>
+      <a href="https://github.com/taikiyakitaiyaki" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank">LinkedIn</a>
       <a href="mailto:trinhmh@uia.no">Send e‑post</a>
     </div>
   </section>
