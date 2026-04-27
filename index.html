@@ -1,114 +1,138 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <title>Praksissøknad</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f7fa;
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8">
+<title>Praksissøknad</title>
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
-        h1 {
-            margin-bottom: 5px;
-        }
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
 
-        h2 {
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
+/* Layout */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+}
 
-        p {
-            color: #444;
-            line-height: 1.6;
-        }
+/* Glass card */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
 
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            margin-top: 15px;
-            background-color: #0077b5;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: 0.2s;
-        }
+/* Typography */
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
-        .button:hover {
-            background-color: #005f8d;
-        }
+p {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+}
 
-        iframe {
-            margin-top: 15px;
-            border-radius: 8px;
-        }
+/* Buttons */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.2s;
+}
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+.button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
 
-        li {
-            margin: 5px 0;
-        }
+/* Sections */
+.section {
+    margin-top: 35px;
+}
 
-        .section {
-            margin-top: 30px;
-        }
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
 
-    </style>
+.skill {
+    background: rgba(255,255,255,0.1);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+/* Video */
+iframe {
+    margin-top: 15px;
+    border-radius: 12px;
+    width: 100%;
+    height: 350px;
+}
+
+</style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <h1>My Trinh Hoang</h1>
-    <p>IT-student ved UiA</p>
+    <div class="card">
 
-    <div class="section">
+        <!-- HERO -->
+        <h1>My Trinh Hoang</h1>
+        <p>IT-student ved UiA • Søker praksis gjennom IS-302</p>
+
         <p>
-            Hei! Jeg er IT-student ved UiA og søker praksis gjennom IS-302.
-            Jeg har interesse for programmering og ønsker å utvikle meg videre innen systemutvikling.
+            Jeg er interessert i systemutvikling og liker å bygge enkle og funksjonelle løsninger.
+            Jeg ønsker praksis for å utvikle meg teknisk og få erfaring fra ekte prosjekter.
         </p>
 
         <a class="button" href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank" rel="noopener noreferrer">
-            Min LinkedIn
+            Se min LinkedIn
         </a>
-    </div>
 
-    <div class="section">
-        <h2>Presentasjonsvideo</h2>
-        <iframe width="100%" height="315"
-            src="https://www.youtube.com/embed/DIN_VIDEO"
-            frameborder="0" allowfullscreen>
-        </iframe>
-    </div>
+        <!-- VIDEO -->
+        <div class="section">
+            <h2>Presentasjonsvideo</h2>
+            <iframe src="https://www.youtube.com/embed/DIN_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-    <div class="section">
-        <h2>Ferdigheter</h2>
-        <ul>
-            <li>C#</li>
-            <li>HTML & CSS</li>
-            <li>Git</li>
-        </ul>
-    </div>
+        <!-- SKILLS -->
+        <div class="section">
+            <h2>Ferdigheter</h2>
+            <div class="skills">
+                <div class="skill">C#</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">Git</div>
+            </div>
+        </div>
 
-    <div class="section">
-        <h2>Kontakt</h2>
-        <p>trinhmh@uia.no</p>
+        <!-- CONTACT -->
+        <div class="section">
+            <h2>Kontakt</h2>
+            <p>trinhmh@uia.no</p>
+        </div>
+
     </div>
 
 </div>
