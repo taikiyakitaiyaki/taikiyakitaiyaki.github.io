@@ -1,23 +1,22 @@
+<!-- HERO / TOPPSEKSJON -->
 <div style="
   display: flex;
   align-items: center;
-  gap: 24px;
-  background: linear-gradient(135deg, #f5f7ff, #ffffff);
-  padding: 30px;
-  border-radius: 16px;
-  margin-bottom: 40px;
+  gap: 32px;
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+  padding: 36px;
+  border-radius: 20px;
+  margin-bottom: 48px;
 ">
 
-  <img src="assets/profil.jpg"
-       alt="Profilbilde"
-       style="width:160px; border-radius:50%;">
+  assets/profil.jpg
 
   <div>
-    <h2 style="margin-top:0;">Hei, jeg heter Trinh My Hoang</h2>
+    <h1 style="margin: 0;">Trinh My Hoang</h1>
 
-    <p>
-      Jeg er student i informasjonssystemer ved Universitetet i Agder og søker
-      praksisplass høsten 2026.
+    <p style="font-size: 1.05em; margin: 8px 0 16px 0;">
+      <strong>Student i informasjonssystemer – Universitetet i Agder</strong><br>
+      Søker praksisplass høsten 2026
     </p>
 
     <p>
@@ -26,81 +25,121 @@
     </p>
 
     <p>
-      Jeg jobber strukturert, liker å lære nye ting og trives godt med samarbeid i gruppe.
+      Jeg jobber strukturert, liker å lære nye ting og trives godt med samarbeid i team.
     </p>
   </div>
 </div>
 
----
+<!-- KOMPETANSE -->
+<div style="
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+">
 
-<div style="background:#f9fafb; padding:24px; border-radius:14px; margin-bottom:32px;">
   <h2>Kompetanse</h2>
 
-  <strong>Programmering</strong>
-  <ul>
-    <li>Grunnleggende Python</li>
-    <li>Java</li>
-    <li>SQL</li>
-  </ul>
+  <div style="display: flex; gap: 40px; flex-wrap: wrap;">
 
-  <strong>Web og systemer</strong>
-  <ul>
-    <li>HTML og CSS</li>
-    <li>Forståelse for systemanalyse og kravspesifikasjon</li>
-  </ul>
+    <div>
+      <strong>Programmering</strong>
+      <ul>
+        <li>Python (grunnleggende)</li>
+        <li>Java</li>
+        <li>SQL</li>
+      </ul>
+    </div>
 
-  <strong>Verktøy</strong>
-  <ul>
-    <li>Git og GitHub</li>
-    <li>Visual Studio Code</li>
-    <li>Dokumentasjon og rapportering</li>
-  </ul>
+    <div>
+      <strong>Web og systemer</strong>
+      <ul>
+        <li>HTML og CSS</li>
+        <li>Systemanalyse og kravspesifikasjon</li>
+      </ul>
+    </div>
+
+    <div>
+      <strong>Verktøy</strong>
+      <ul>
+        <li>Git og GitHub</li>
+        <li>Visual Studio Code</li>
+        <li>Dokumentasjon og rapportering</li>
+      </ul>
+    </div>
+
+  </div>
 </div>
 
----
+<!-- PROSJEKTER -->
+<div style="
+  background: #f9fafb;
+  padding: 32px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+">
 
-<div style="background:#ffffff; padding:24px; border-radius:14px; margin-bottom:32px;">
   <h2>Prosjekter og erfaring</h2>
 
-  <p>
-    <strong>Skoleprosjekter ved UiA</strong>
-  </p>
+  <p><strong>Skoleprosjekter – UiA</strong></p>
+
   <ul>
-    <li>Arbeid med programmeringsoppgaver og gruppeprosjekter</li>
-    <li>Fokus på analyse, problemløsning og samarbeid</li>
-    <li>Erfaring med å planlegge og dokumentere arbeid</li>
+    <li>Programmeringsoppgaver i Python og Java</li>
+    <li>Gruppeprosjekter med fokus på samarbeid og struktur</li>
+    <li>Analyse og dokumentasjon av arbeidsprosesser</li>
   </ul>
 
-  <p>
-    GitHub‑prosjekter legges fortløpende til.
+  <p style="color: #555;">
+    Utvalgte GitHub‑prosjekter legges til fortløpende.
   </p>
 </div>
 
----
+<!-- MOTIVASJON -->
+<div style="
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+">
 
-<div style="background:#f9fafb; padding:24px; border-radius:14px; margin-bottom:32px;">
   <h2>Motivasjon for praksis</h2>
 
-  <p>
-    Jeg ønsker praksis for å få innsikt i:
-  </p>
+  <p>Gjennom praksis ønsker jeg å:</p>
 
   <ul>
-    <li>hvordan informasjonssystemer brukes i en reell arbeidshverdag</li>
-    <li>samarbeid mellom IT og resten av organisasjonen</li>
-    <li>praktisk erfaring som utfyller det teoretiske grunnlaget fra studiet</li>
+    <li>få innsikt i hvordan informasjonssystemer brukes i en reell arbeidshverdag</li>
+    <li>lære samspillet mellom IT og resten av organisasjonen</li>
+    <li>omsette teori fra studiet til praktisk erfaring</li>
   </ul>
 
   <p>
-    Jeg er motivert for å bidra, lære og utvikle meg faglig gjennom praksisperioden.
+    Jeg er motivert for å bidra aktivt, lære raskt og utvikle meg faglig i praksisperioden.
   </p>
 </div>
 
----
+<!-- KONTAKT -->
+<div style="
+  background: #f9fafb;
+  padding: 32px;
+  border-radius: 18px;
+">
 
-<div style="background:#ffffff; padding:24px; border-radius:14px;">
-  <h2>Lenker</h2>
+  <h2>Kontakt og lenker</h2>
 
   <ul>
     <li>
       GitHub:
+      <a href="https://github.com/taikiyakitaiyaki">
+        github.com/taikiyakitaiyaki
+      </a>
+    </li>
+    <li>LinkedIn: (legges til når klar)</li>
+    <li>Presentasjonsvideo: (valgfritt)</li>
+  </ul>
+
+  <p style="margin-top:16px;">
+    📧 <strong>E‑post:</strong> trinhmh@uia.no
+  </p>
+</div>
