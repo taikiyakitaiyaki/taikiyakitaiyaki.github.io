@@ -5,53 +5,113 @@
     <title>Praksissøknad</title>
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             max-width: 800px;
-            margin: auto;
-            padding: 20px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             text-align: center;
         }
+
         h1 {
             margin-bottom: 5px;
         }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.6;
+        }
+
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
+            padding: 12px 24px;
+            margin-top: 15px;
             background-color: #0077b5;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.2s;
         }
+
+        .button:hover {
+            background-color: #005f8d;
+        }
+
         iframe {
-            margin-top: 20px;
+            margin-top: 15px;
+            border-radius: 8px;
         }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
     </style>
 </head>
 <body>
 
+<div class="container">
+
     <h1>My Trinh Hoang</h1>
     <p>IT-student ved UiA</p>
 
-    <p>
-        Hei! Jeg søker praksis gjennom IS-302 og er interessert i utvikling og teknologi.
-    </p>
+    <div class="section">
+        <p>
+            Hei! Jeg er IT-student ved UiA og søker praksis gjennom IS-302.
+            Jeg har interesse for programmering og ønsker å utvikle meg videre innen systemutvikling.
+        </p>
 
-    <a class="button" href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank">
-        Min LinkedIn
-    </a>
+        <a class="button" href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank" rel="noopener noreferrer">
+            Min LinkedIn
+        </a>
+    </div>
 
-    <h2>Presentasjonsvideo</h2>
-    <iframe width="100%" height="315"
-        src="https://www.youtube.com/embed/DIN_VIDEO"
-        frameborder="0" allowfullscreen>
-    </iframe>
+    <div class="section">
+        <h2>Presentasjonsvideo</h2>
+        <iframe width="100%" height="315"
+            src="https://www.youtube.com/embed/DIN_VIDEO"
+            frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
 
-    <h2>Ferdigheter</h2>
-    <p>C#, HTML, CSS, Git</p>
+    <div class="section">
+        <h2>Ferdigheter</h2>
+        <ul>
+            <li>C#</li>
+            <li>HTML & CSS</li>
+            <li>Git</li>
+        </ul>
+    </div>
 
-    <h2>Kontakt</h2>
-    <p>trinhmh@uia.no</p>
+    <div class="section">
+        <h2>Kontakt</h2>
+        <p>trinhmh@uia.no</p>
+    </div>
+
+</div>
 
 </body>
 </html>
