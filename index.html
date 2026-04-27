@@ -5,67 +5,64 @@
 <title>Praksissøknad</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
     color: white;
+    background: #0077b5;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
 }
 
-/* Layout */
+/* MAIN */
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 60px auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-/* Glass card */
-.card {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    padding: 40px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-}
-
-/* Typography */
-h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+h2 {
+    margin-top: 40px;
 }
 
 p {
-    color: rgba(255,255,255,0.8);
     line-height: 1.6;
+    color: #444;
 }
 
-/* Buttons */
+/* BUTTON */
 .button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 22px;
-    background: #2563eb;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background: #0077b5;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: 0.2s;
+    border-radius: 6px;
 }
 
-.button:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-}
-
-/* Sections */
-.section {
-    margin-top: 35px;
-}
-
-/* Skills */
+/* SKILLS */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -74,68 +71,67 @@ p {
 }
 
 .skill {
-    background: rgba(255,255,255,0.1);
-    padding: 8px 14px;
+    background: #f3f4f6;
+    padding: 6px 12px;
     border-radius: 999px;
     font-size: 14px;
 }
 
-/* Video */
+/* VIDEO */
 iframe {
     margin-top: 15px;
-    border-radius: 12px;
     width: 100%;
-    height: 350px;
+    height: 360px;
+    border-radius: 8px;
+    border: none;
 }
 
+/* FOOTER */
+footer {
+    margin-top: 80px;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    color: #555;
+    font-size: 14px;
+}
 </style>
+
 </head>
 
 <body>
 
+<header>
+    <h1>My Trinh Hoang</h1>
+    <a href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank">
+        LinkedIn
+    </a>
+</header>
+
 <div class="container">
 
-    <div class="card">
+    <h2>Om meg</h2>
+    <p>
+        Hei! Jeg er IT-student ved UiA og søker praksis gjennom IS-302.
+        Jeg har interesse for systemutvikling og ønsker å utvikle mine ferdigheter gjennom reelle prosjekter.
+    </p>
 
-        <!-- HERO -->
-        <h1>My Trinh Hoang</h1>
-        <p>IT-student ved UiA • Søker praksis gjennom IS-302</p>
+    <h2>Presentasjonsvideo</h2>
+    <iframe src="https://www.youtube.com/embed/DIN_VIDEO"></iframe>
 
-        <p>
-            Jeg er interessert i systemutvikling og liker å bygge enkle og funksjonelle løsninger.
-            Jeg ønsker praksis for å utvikle meg teknisk og få erfaring fra ekte prosjekter.
-        </p>
-
-        <a class="button" href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank" rel="noopener noreferrer">
-            Se min LinkedIn
-        </a>
-
-        <!-- VIDEO -->
-        <div class="section">
-            <h2>Presentasjonsvideo</h2>
-            <iframe src="https://www.youtube.com/embed/DIN_VIDEO" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <!-- SKILLS -->
-        <div class="section">
-            <h2>Ferdigheter</h2>
-            <div class="skills">
-                <div class="skill">C#</div>
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">Git</div>
-            </div>
-        </div>
-
-        <!-- CONTACT -->
-        <div class="section">
-            <h2>Kontakt</h2>
-            <p>trinhmh@uia.no</p>
-        </div>
-
+    <h2>Ferdigheter</h2>
+    <div class="skills">
+        <div class="skill">C#</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Git</div>
     </div>
 
 </div>
+
+<footer>
+    <p>📧 trinhmh@uia.no</p>
+</footer>
 
 </body>
 </html>
