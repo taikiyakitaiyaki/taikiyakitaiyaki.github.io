@@ -1,6 +1,8 @@
 <div style="display: flex; align-items: flex-start; gap: 20px;">
 
-  assets/profil.jpg
+  <img src="assets/profil.jpg"
+       alt="Profilbilde"
+       style="width:150px; border-radius:50%;" />
 
   <div>
 
