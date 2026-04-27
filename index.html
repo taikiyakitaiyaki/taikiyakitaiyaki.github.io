@@ -25,16 +25,13 @@
       padding: 40px 24px 80px;
     }
 
-    /* HERO */
+    /* HERO – åpen, ikke boks */
     .hero {
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 48px;
       align-items: center;
       margin-bottom: 80px;
-      background: linear-gradient(135deg, #eef2ff, #ffffff);
-      padding: 40px;
-      border-radius: 24px;
     }
 
     .hero img {
@@ -91,11 +88,17 @@
       margin: 12px 0 0;
     }
 
-    /* BUTTONS */
+    /* BUTTONS – samme bredde */
+    .links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
     .links a {
-      display: inline-block;
-      margin-right: 16px;
-      margin-bottom: 8px;
+      min-width: 160px;        /* 👈 samme bredde */
+      text-align: center;
       padding: 10px 18px;
       border-radius: 10px;
       text-decoration: none;
@@ -110,10 +113,10 @@
       transform: translateY(-2px);
     }
 
-    /* PRIMARY BUTTON */
+    /* Fremhevet kontakt-knapp */
     .links a.primary {
       background: #2563eb;
-      color: #ffffff;
+      color: white;
     }
 
     .links a.primary:hover {
@@ -129,6 +132,10 @@
 
       .hero img {
         margin: 0 auto;
+      }
+
+      .links {
+        justify-content: center;
       }
     }
   </style>
@@ -153,7 +160,7 @@
         og ønsker å utvikle både tekniske og analytiske ferdigheter gjennom praksis.
       </p>
 
-      <div class="links" style="margin-top:24px;">
+      <div class="links">
         <a href="#kontakt" class="primary">Ta kontakt</a>
         <a href="#prosjekter">Se prosjekter</a>
         <a href="assets/My_Trinh_Hoang_CV.pdf" download>Last ned CV</a>
