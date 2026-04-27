@@ -1,3 +1,9 @@
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+
+  assets/profil.jpg
+
+  <div>
+
 ## Hei, jeg heter Trinh My Hoang
 
 Jeg er student i informasjonssystemer ved Universitetet i Agder og søker praksisplass høsten 2026.
@@ -55,5 +61,5 @@ Jeg er motivert for å bidra, lære og utvikle meg faglig gjennom praksisperiode
 
 ---
 
-📧 E‑post: legg inn student‑eposten din her
+📧 E‑post: trinhmh@uia.no
 ``
