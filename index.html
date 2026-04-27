@@ -28,8 +28,6 @@
       gap: 48px;
       align-items: center;
       margin-bottom: 80px;
-
-      /* ⭐ Premium-look */
       background: linear-gradient(135deg, #eef2ff, #ffffff);
       padding: 40px;
       border-radius: 24px;
@@ -54,11 +52,6 @@
       margin-bottom: 24px;
     }
 
-    .hero p {
-      max-width: 600px;
-    }
-
-    /* SECTIONS */
     section {
       margin-bottom: 64px;
     }
@@ -68,14 +61,12 @@
       margin-bottom: 24px;
     }
 
-    /* CARDS */
+    /* BASE CARD */
     .card {
       background: #ffffff;
       padding: 32px;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-
-      /* ⭐ Subtil hover-effekt */
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -83,6 +74,11 @@
       transform: translateY(-4px);
       box-shadow: 0 14px 40px rgba(0,0,0,0.08);
     }
+
+    /* COLOR VARIANTS */
+    .card.blue   { border-left: 5px solid #3b82f6; }
+    .card.green  { border-left: 5px solid #22c55e; }
+    .card.purple { border-left: 5px solid #7c3aed; }
 
     .grid-3 {
       display: grid;
@@ -95,7 +91,7 @@
       margin: 12px 0 0;
     }
 
-    /* BUTTON LINKS */
+    /* BUTTONS */
     .links a {
       display: inline-block;
       margin-right: 16px;
@@ -124,138 +120,105 @@
       .hero img {
         margin: 0 auto;
       }
-
-      .hero p {
-        margin-left: auto;
-        margin-right: auto;
-      }
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
+<main class="container">
 
-    <!-- HERO -->
-    <section class="hero">
-      <img src="assets/IMG_20230307_154230.jpg" alt="Profilbilde">
+  <!-- HERO -->
+  <section class="hero">
+    <img src="assets/IMG_20230307_154230.jpg" alt="Profilbilde">
 
-      <div>
-        <h1>My Trinh Hoang</h1>
-        <div class="subtitle">
-          Student i IT og informasjonssystemer – Universitetet i Agder<br>
-          Søker praksisplass høsten 2026
-        </div>
-
-        <p>
-          Jeg er interessert i hvordan IT‑systemer brukes i praksis i organisasjoner,
-          og ønsker å utvikle både tekniske og analytiske ferdigheter gjennom praksis.
-        </p>
-
-        <p>
-          Jeg jobber strukturert, liker å lære nye ting og trives godt med samarbeid i team.
-        </p>
+    <div>
+      <h1>My Trinh Hoang</h1>
+      <div class="subtitle">
+        Student i IT og informasjonssystemer – Universitetet i Agder<br>
+        Søker praksisplass høsten 2026
       </div>
-    </section>
 
-    <!-- KOMPETANSE -->
-    <section>
-      <h2>Kompetanse</h2>
+      <p>
+        Jeg er interessert i hvordan IT‑systemer brukes i praksis i organisasjoner,
+        og ønsker å utvikle både tekniske og analytiske ferdigheter gjennom praksis.
+      </p>
 
-      <div class="grid-3">
-        <div class="card">
-          <strong>Programmering</strong>
-          <ul>
-            <li>Python (grunnleggende)</li>
-            <li>C#</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <strong>Web og systemer</strong>
-          <ul>
-            <li>HTML og CSS</li>
-            <li>Systemanalyse</li>
-            <li>Kravspesifikasjon</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <strong>Verktøy</strong>
-          <ul>
-            <li>Git og GitHub</li>
-            <li>Visual Studio Code</li>
-            <li>Dokumentasjon</li>
-          </ul>
-        </div>
+      <div class="links" style="margin-top:24px;">
+        <a href="#kontakt">Get in touch</a>
+        <a href="#prosjekter">View projects</a>
+        <a href="assets/My_Trinh_Hoang_CV.pdf" download>Resume</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROSJEKTER -->
-    <section>
-      <h2>Prosjekter og erfaring</h2>
-
-      <div class="card">
-        <p><strong>Skoleprosjekter – UiA</strong></p>
+  <!-- KOMPETANSE -->
+  <section>
+    <h2>Kompetanse</h2>
+    <div class="grid-3">
+      <div class="card blue">
+        <strong>Programmering</strong>
         <ul>
-          <li>Programmeringsoppgaver i Python</li>
-          <li>Gruppeprosjekter med fokus på samarbeid og struktur</li>
-          <li>Analyse og dokumentasjon av løsninger</li>
+          <li>Python (grunnleggende)</li>
+          <li>C#</li>
+          <li>SQL</li>
         </ul>
-
-        <p style="margin-top:16px; color:#4b5563;">
-          Utvalgte prosjekter legges fortløpende til på GitHub.
-        </p>
       </div>
-    </section>
 
-    <!-- MOTIVASJON -->
-    <section>
-      <h2>Motivasjon for praksis</h2>
-
-      <div class="card">
+      <div class="card blue">
+        <strong>Web og systemer</strong>
         <ul>
-          <li>Forstå hvordan informasjonssystemer brukes i arbeidshverdagen</li>
-          <li>Lære samspillet mellom IT og organisasjon</li>
-          <li>Omsette teori til praktisk erfaring</li>
+          <li>HTML og CSS</li>
+          <li>Systemanalyse</li>
+          <li>Kravspesifikasjon</li>
         </ul>
-
-        <p style="margin-top:16px;">
-          Jeg er motivert for å bidra, lære raskt og utvikle meg faglig i praksisperioden.
-        </p>
       </div>
-    </section>
 
-    <!-- KONTAKT -->
+      <div class="card blue">
+        <strong>Verktøy</strong>
+        <ul>
+          <li>Git og GitHub</li>
+          <li>Visual Studio Code</li>
+          <li>Dokumentasjon</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Kontakt</h2>
+  <!-- PROSJEKTER -->
+  <section id="prosjekter">
+    <h2>Prosjekter og erfaring</h2>
+    <div class="card green">
+      <ul>
+        <li>Programmeringsoppgaver i Python</li>
+        <li>Gruppeprosjekter med fokus på samarbeid</li>
+        <li>Analyse og dokumentasjon av løsninger</li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="card links">
-    <a href="assets/My_Trinh_Hoang_CV.pdf" download>
-      Last ned CV
-    </a>
+  <!-- MOTIVASJON -->
+  <section>
+    <h2>Motivasjon for praksis</h2>
+    <div class="card purple">
+      <ul>
+        <li>Forstå hvordan informasjonssystemer brukes i arbeidshverdagen</li>
+        <li>Lære samspillet mellom IT og organisasjon</li>
+        <li>Omsette teori til praktisk erfaring</li>
+      </ul>
+    </div>
+  </section>
 
-    <a href="https://github.com/taikiyakitaiyaki" target="_blank">
-      GitHub →
-    </a>
+  <!-- KONTAKT -->
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <div class="card links">
+      <a href="assets/My_Trinh_Hoang_CV.pdf" download>Last ned CV</a>
+      <a href="https://github.com/taikiyakitaiyaki" target="_blank">GitHub →</a>
+      <a href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank">LinkedIn →</a>
+      <a href="mailto:trinhmh@uia.no">Send e‑post</a>
+    </div>
+  </section>
 
-    <a href="https://www.linkedin.com/in/my-t-hoang-2bb246385/" target="_blank">
-      LinkedIn →
-    </a>
-
-    <a href="mailto:trinhmh@uia.no">
-      Send e‑post
-    </a>
-
-    <p style="margin-top:16px;">
-      📧 trinhmh@uia.no
-    </p>
-  </div>
-</section>
-
-
-  </main>
+</main>
 </body>
 </html>
