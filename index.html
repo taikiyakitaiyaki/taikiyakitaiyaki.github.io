@@ -98,7 +98,21 @@
     .video-title {
       text-align: center;
     }
-  
+    
+    .video-16-9 {
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      max-width: 720px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-16-9 iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
       .grid-3 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -294,17 +308,10 @@
     <h2 class="video-title">Søknadsvideo</h2>
   
     <div class="video-wrapper">
-      <div class="card video-card" style="
-        padding:0;
-        overflow:hidden;
-        max-width: 360px;
-        margin: 0 auto;
-      ">
+      <div class="card video-card video-16-9">
         <iframe
-          width="100%"
-          height="500"
-          src="https://youtu.be/_j8UqdsovoY"
-          frameborder="0"
+          src="https://www.youtube.com/embed/_j8UqdsovoY"
+          title="Søknadsvideo"
           allowfullscreen>
         </iframe>
       </div>
